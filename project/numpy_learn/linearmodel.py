@@ -5,7 +5,7 @@ import sys
 datapath = '/Users/zhaolu/code/mygit/mycookcode/programming/py-data-science-learn/data'
 N = int(sys.argv[1])
 
-h,l,c = np.loadtxt(datapath+'/600469.csv',delimiter=',',skiprows=0,usecols=(2,4,3),unpack=True)
+h,l,c = np.loadtxt(datapath+'/600469_3.csv',delimiter=',',skiprows=0,usecols=(2,4,3),unpack=True)
 #获得包含N个股价的向量b
 b = c[-N:]
 b = b[::-1]
